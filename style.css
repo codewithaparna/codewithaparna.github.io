@@ -1,200 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
+
+ * body{
+    margin:0;
+    padding:0;
     box-sizing: border-box;
-}
+    } 
 
 .header{
     width: 100%;
     height: 10vh;
-    background-color: pink;
-    border: 1px solid gainsboro;
-    text-align: center;
+    background-color: gray;
+    margin-bottom: 1vh;
+    border: 1px solid black;
+    }
+
+.logo{
+    width: 30%;
+    height: 6vh;
+    font-weight: 700;
     font-size: 2rem;
-    font-weight: 600;
-    padding-top: 1vh;
-}
+    margin-left: 2%;
+    margin-top: 2vh;
+    }
+
+.nav{
+            width: 100%;
+    }
+
+.nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+         margin: 0;
+        padding: 0;
+       }
+
+.nav ul li{
+        width: 19.2%;
+        height: 4vh;
+        background-color: pink;
+        text-align: center;
+        border: 1px solid black;
+        padding-top: 2vh;
+                
+       }
+
+.nav ul li a{
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+                      
+       }
 
 .mid{
     width: 100%;
-    /* height: 82vh; */
+    margin-top: 1vh;
     display: flex;
-    flex-wrap: nowrap;
-
-}
-
-   
-.nav{
-    width: 20%;
-    /* height: 82vh; */
-    background-color: gainsboro;
-    border: 1px solid gainsboro;
-    
-}
-
-.nav ul{
-               
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-                          
-}
-
-.nav ul li{
-    width: 100%;
-    height: 5vh;
-    background-color:gray;
-    margin-bottom: 2vh;
-    border: 1px solid gainsboro;
-    text-align: center;
-    padding-top: 1vh;
-
-}
-
-.nav ul li a{
-    color: black;
-    text-decoration: none;
-    
-}
+    justify-content: space-between;
+    }
 
 .article{
-    width: 60%;
-    /* height: 82vh; */
-    /* background-color: ghostwhite; */
-    border: 1px solid gainsboro;
-}
+    width: 79.8%;
+    }
 
 .article h2 {
     text-align: center;
-    /* padding: 1vh; */
-}
+         
+    }
 
 .article img {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     padding: 1px;
     border: solid 1px gainsboro;
-}
+    }
 
 
 .article p {
     text-align: justify;
     padding: 1vh;
-}
+    }
 
 .aside{
-    width: 20%;
-    /* height: 82vh; */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    background-color: silver;
-    border: 1px solid gainsboro;
-}
+    width: 19.2%;
+    background-color: gainsboro;
+    }
 
 .col{
     width: 100%;
-    height: 41vh;
-}
+    height: 40.5vh;
+    }
 
 .col h4 {
     
     text-align: center;
     text-transform: capitalize;
     font-weight: 700;
-    padding: 2vh;
-   
-      
-}
+    padding: 2vh;     
+    }
 
 .col img {
     width: 100%;
-    height: 34vh;
+    height: 31.5vh;
     padding: 1px;
     border: solid 1px gainsboro;
-}
+    }
 
 .footer{
     width: 100%;
-    height: 8vh;
-    background-color: pink;
-    border: 1px solid gainsboro;
+    height: 5vh;
+    background-color: gray;
+    margin-top: 1vh;
+    border: 1px solid black;
     text-align: center;
-    padding-top: 3vh;
-
-}
-
-
-@media(max-width:1080px){
-
-    .mid{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        
-    
+    padding-top: 4vh;
     }
-
-    .nav{
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .article{
-        width: 80%;
-       
-        
-    }
-
-    .aside{
-        width: 100%;
-        
-        /* background-color: gold; */
-                
-    }
-
-    .col img {
-        width: 50%;
-        height: 30vh;
-        margin-left: 25%;
-        border: solid 1px gainsboro;
-    }
-
-}
-
-@media(max-width:650px){
-
-  
-    .mid{
-        width: 100%;
-        display: flex;
-        flex-direction: column;  
-        justify-content: space-between;
-    
-    }
-
-    .nav{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .article{
-        width: 100%;
-        
-    }
-
-    .aside{
-        width: 100%;
-        
-    }
-
-            
-    
-    
-}
